@@ -2,6 +2,7 @@ package tech.kitucode;
 
 import java.io.Serializable;
 
+// for serialization to work, the class has to implement Serializable
 public class Car implements Serializable {
     private String brand;
 
