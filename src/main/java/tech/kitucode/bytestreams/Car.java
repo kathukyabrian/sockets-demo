@@ -1,4 +1,4 @@
-package tech.kitucode;
+package tech.kitucode.bytestreams;
 
 import java.io.Serializable;
 

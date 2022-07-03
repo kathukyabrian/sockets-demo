@@ -1,20 +1,19 @@
 package tech.kitucode;
 
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintStream;
-import java.net.Socket;
+import tech.kitucode.bytestreams.Helper;
 
 public class App
 {
     public static void main( String[] args )
     {
-        Streams streams = new Streams();
+        Helper streams = new Helper();
         streams.writeToFile();
         streams.readFromFile();
-
         streams.objectStreaming();
+
+        tech.kitucode.characterstreams.Helper helper = new tech.kitucode.characterstreams.Helper();
+        helper.readDataFromFileUsingFileReader();
+        helper.readDataFromFileUsingBufferedReader();
     }
 }

@@ -1,8 +1,8 @@
-package tech.kitucode;
+package tech.kitucode.bytestreams;
 
 import java.io.*;
 
-public class Streams {
+public class Helper {
     public void writeToFile() {
         // 3 classes
         // FileOutputStream
