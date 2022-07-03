@@ -14,5 +14,7 @@ public class App
         Streams streams = new Streams();
         streams.writeToFile();
         streams.readFromFile();
+
+        streams.objectStreaming();
     }
 }
