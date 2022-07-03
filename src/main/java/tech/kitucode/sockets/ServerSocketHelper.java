@@ -19,8 +19,8 @@ public class ServerSocketHelper {
             serverSocket = new ServerSocket(port);
             System.out.println("Waiting for client connections");
             clientSocket = serverSocket.accept();
-            System.out.println("A client connected|" + clientSocket.getInetAddress() + "| with port "
-                    + clientSocket.getPort()+"|through server port "+clientSocket.getLocalPort());
+            System.out.println("A client connected|" + clientSocket.getInetAddress().getCanonicalHostName() + " with port "
+                    + clientSocket.getPort() + "| through server port " + clientSocket.getLocalPort());
             out = new PrintWriter(clientSocket.getOutputStream(), true);
             in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
